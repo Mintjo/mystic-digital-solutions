@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contactez-Nous — Mystic Digital Solutions</title>
+  <meta name="description" content="Contactez Mystic Digital Solutions pour une consultation gratuite en Data Analytics ou Développement Web au Bénin et à l’international.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #E0E0E0;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .note {
+      font-size: 0.875rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+
+    .contact-info h3,
+    .faq h3 {
+      margin-top: 2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-method {
+      margin-bottom: 1rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item strong {
+      color: #007A87;
+    }
+
+    .final-cta-contact {
+      text-align: center;
+      background-color: #F8F9FA;
+      padding: 4rem 0;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Mystic Digital Solutions</a>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="contact.html" class="btn primary small">Nous contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- En-tête -->
+  <section class="contact-header">
+    <div class="container">
+      <h1>Contactez-Nous</h1>
+      <p class="subtitle">Nous serions ravis d'échanger sur votre projet. Quelle que soit votre question, nous sommes là pour vous répondre.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <p style="text-align: center; margin-bottom: 2rem;">
+      Que vous ayez un projet précis en tête ou simplement des questions sur nos services, n'hésitez pas à nous contacter. Nous répondons généralement sous 24 heures.
+    </p>
+
+    <div class="contact-layout">
+      <!-- Formulaire -->
+      <div>
+        <h2>Formulaire de Contact</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nom complet *</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone (optionnel)</label>
+            <input type="tel" id="phone" placeholder="+229 ...">
+          </div>
+          <div class="form-group">
+            <label for="company">Entreprise (optionnel)</label>
+            <input type="text" id="company">
+          </div>
+
+          <div class="form-group">
+            <label for="project-type">Type de projet *</label>
+            <select id="project-type" required>
+              <option value="">Sélectionnez...</option>
+              <option value="data">Data Analytics & BI</option>
+              <option value="web">Développement Web</option>
+              <option value="complete">Solution Complète</option>
+              <option value="other">Autre / Je ne sais pas encore</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Budget indicatif (optionnel)</label>
+            <select id="budget">
+              <option value="">Sélectionnez...</option>
+              <option value="lt1000">Moins de 200$</option>
+              <option value="1000-3000">200$ - 500$</option>
+              <option value="3000-5000">500$ - 1000$</option>
+              <option value="gt5000">Plus de 1000$</option>
+              <option value="tbd">À discuter</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="timeline">Délai souhaité (optionnel)</label>
+            <select id="timeline">
+              <option value="">Sélectionnez...</option>
+              <option value="urgent">Urgent (moins d'1 mois)</option>
+              <option value="short">Court terme (1-2 mois)</option>
+              <option value="medium">Moyen terme (3-6 mois)</option>
+              <option value="long">Long terme (6+ mois)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" placeholder="Description de votre projet ou question" required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary">Envoyer le message</button>
+          <p class="note">🔒 Vos informations sont confidentielles et ne seront jamais partagées avec des tiers.</p>
+        </form>
+      </div>
+
+      <!-- Coordonnées & FAQ -->
+      <div>
+        <h3>Autres Moyens de Nous Contacter</h3>
+        <div class="contact-method">📧 <strong>Email :</strong> <a href="mailto:contact@mysticdigitalsolutions.com" style="color:#007A87;">contact@mysticdigitalsolutions.com</a><br><small>Réponse sous 24h en jours ouvrés</small></div>
+        <div class="contact-method">📱 <strong>WhatsApp :</strong> <a href="https://wa.me/2290147258953" style="color:#007A87;">+229 01 47 25 89 53</a><br><small>Pour une réponse rapide</small></div>
+        <div class="contact-method">💼 <strong>LinkedIn :</strong> <a href="#" style="color:#007A87;">Mystic Digital Solutions</a><br><small>Suivez-nous pour nos actualités</small></div>
+        <div class="contact-method">📍 <strong>Localisation :</strong> Cotonou, Bénin<br><small>Disponible pour rencontres en présentiel ou visio</small></div>
+
+        <h3>Questions Fréquentes</h3>
+        <div class="faq-item">
+          <strong>Q : Quel est votre délai de réponse ?</strong><br>
+          R : Nous répondons généralement sous 24 heures en jours ouvrés.
+        </div>
+        <div class="faq-item">
+          <strong>Q : Proposez-vous une consultation gratuite ?</strong><br>
+          R : Oui ! Nous offrons une première consultation gratuite de 30 minutes.
+        </div>
+        <div class="faq-item">
+          <strong>Q : Travaillez-vous avec des clients à l'international ?</strong><br>
+          R : Absolument. Nous travaillons avec des clients partout dans le monde.
+        </div>
+        <div class="faq-item">
+          <strong>Q : Quels sont vos tarifs ?</strong><br>
+          R : Nos tarifs varient selon la complexité du projet. Contactez-nous pour un devis personnalisé gratuit.
+        </div>
+        <div class="faq-item">
+          <strong>Q : Combien de temps prend un projet en moyenne ?</strong><br>
+          R : Un dashboard simple : 2-3 semaines. Un site web complet : 6-8 semaines.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Final -->
+  <section class="final-cta-contact">
+    <div class="container">
+      <h2>Prêt à Démarrer Votre Projet ?</h2>
+      <p>Ne laissez pas vos idées rester des idées. Transformons-les ensemble en solutions digitales qui font la différence.</p>
+      <div class="hero-buttons">
+        <a href="#contact-form" class="btn primary">Remplir le formulaire</a>
+        <a href="tel:+2290147258953" class="btn secondary">Appeler maintenant</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Mystic Digital Solutions</h3>
+          <p>Data Analytics & Web Development</p>
+          <p>Nous transformons vos données en décisions et vos idées en solutions digitales performantes.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Entreprise</h4>
+          <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#data-analytics">Data Analytics & BI</a></li>
+            <li><a href="services.html#web-dev">Développement Web</a></li>
+            <li><a href="services.html#solutions">Solutions Complètes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><span style="color:#007A87;">📧</span> <a href="mailto:contact@mysticdigitalsolutions.com">contact@mysticdigitalsolutions.com</a></li>
+            <li><span style="color:#007A87;">📱</span> <a href="tel:+2290147258953">+229 01 47 25 89 53</a></li>
+            <li><span style="color:#007A87;">📍</span> Cotonou, Bénin</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Suivez-nous</h4>
+          <div class="social-links">
+            <a href="#" style="color:#007A87; margin-right: 0.5rem;">LinkedIn</a><br>
+            <a href="#" style="color:#007A87; margin-right: 0.5rem;">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-left">
+          <p>&copy; 2025 Mystic Digital Solutions. Tous droits réservés.</p>
+        </div>
+        <div class="footer-right">
+          <a href="#">Mentions légales</a> | 
+          <a href="#">Politique de confidentialité</a> | 
+          <a href="#">Conditions d'utilisation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Merci pour votre message ! (Ce formulaire est en mode démo. En production, il enverrait vos données à notre équipe.)');
+    });
+  </script>
+</body>
+</html>
