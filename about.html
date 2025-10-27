@@ -1,250 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>À Propos — Mystic Digital Solutions</title>
-  <meta name="description" content="Découvrez l’histoire, la mission et les valeurs de Mystic Digital Solutions : là où la passion pour la data rencontre l’excellence du développement web.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .about-header {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .values-grid,
-    .expertise-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .value-card,
-    .expertise-card {
-      background-color: #FAFAFA;
-      padding: 2rem;
-      border-radius: 8px;
-    }
-
-    .value-card h3,
-    .expertise-card h3 {
-      color: #007A87;
-      margin-bottom: 1rem;
-    }
-
-    .why-us-section {
-      background-color: #F8F9FA;
-      padding: 5rem 0;
-      margin: 4rem 0;
-    }
-
-    .why-us-section .container {
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Mystic Digital Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <!-- Header Navigation -->
-  <header class="main-header">
-    <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo">Mystic Digital Solutions</a>
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-white">Mystic Digital</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="text-gray-300 hover:text-white">Accueil</a>
+                    <a href="about.html" class="text-gray-300 hover:text-white">À propos</a>
+                    <a href="services.html" class="text-gray-300 hover:text-white">Services</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:text-white">Portfolio</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-white">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+                <a href="index.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Accueil</a>
+                <a href="about.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">À propos</a>
+                <a href="services.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Services</a>
+                <a href="portfolio.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Portfolio</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Contact</a>
+            </div>
         </nav>
-        <a href="contact.html" class="btn primary small">Nous contacter</a>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- En-tête -->
-  <section class="about-header">
-    <div class="container">
-      <h1>À Propos de Mystic Digital Solutions</h1>
-      <p class="subtitle">Là où la passion pour la data rencontre l'excellence du développement web</p>
-    </div>
-  </section>
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-20">
+        <h1 class="text-4xl font-bold text-center text-white">À propos de Mystic Digital Solutions</h1>
+        <p class="mt-4 text-center text-gray-400">Nous sommes une équipe de passionnés dédiés à la transformation digitale.</p>
 
-  <!-- Notre Histoire -->
-  <section class="container">
-    <h2>Notre Histoire</h2>
-    <p>
-      Mystic Digital Solutions est née d'une conviction simple : les entreprises ont besoin de partenaires qui maîtrisent à la fois l'analyse de données et le développement digital.
-    </p>
-    <p>
-      Dans un monde où les données sont partout mais souvent inexploitées, et où la présence digitale est devenue essentielle, nous avons créé une structure unique qui combine ces deux expertises complémentaires.
-    </p>
-    <p>
-      Nous ne sommes pas qu'une agence web. Nous ne sommes pas qu'un cabinet d'analyse. Nous sommes votre partenaire digital complet, capable de transformer vos données en insights stratégiques et vos idées en solutions digitales performantes.
-    </p>
-  </section>
+        <div class="mt-12 text-lg text-gray-300">
+            <p>
+                Mystic Digital Solutions est une agence de conseil en innovation digitale basée en Afrique. Nous aidons les entreprises à exploiter la puissance de la technologie pour stimuler leur croissance et atteindre leurs objectifs.
+            </p>
+            <p class="mt-4">
+                Notre mission est de fournir des solutions numériques de haute qualité qui sont à la fois innovantes et adaptées aux besoins spécifiques de nos clients. Nous sommes spécialisés dans l'analyse de données, le développement web et la stratégie digitale.
+            </p>
+        </div>
+    </main>
 
-  <!-- Notre Mission -->
-  <section class="container" style="margin-top: 4rem;">
-    <h2>Notre Mission</h2>
-    <p>
-      Notre mission est de démocratiser l'accès à l'intelligence des données et aux solutions digitales de qualité pour toutes les entreprises, quelle que soit leur taille.
-    </p>
-    <p>
-      Nous croyons que :
-    </p>
-    <ul style="list-style-type: none; padding-left: 1.5rem; margin-top: 1rem;">
-      <li style="margin-bottom: 0.75rem;">📊 <strong>Chaque entreprise mérite d'exploiter ses données</strong> pour prendre de meilleures décisions</li>
-      <li style="margin-bottom: 0.75rem;">💻 <strong>Le digital doit être accessible</strong> et adapté aux besoins réels des entreprises</li>
-      <li style="margin-bottom: 0.75rem;">🤝 <strong>La technologie est au service des humains</strong>, pas l'inverse</li>
-      <li>🚀 <strong>L'innovation naît de la combinaison</strong> de compétences complémentaires</li>
-    </ul>
-  </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Mystic Digital Solutions. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-  <!-- Nos Valeurs -->
-  <section class="container" style="margin-top: 4rem;">
-    <h2>Nos Valeurs</h2>
-    <div class="values-grid">
-      <div class="value-card">
-        <h3>🎯 Excellence</h3>
-        <p>Nous nous engageons à livrer un travail de la plus haute qualité, avec une attention méticuleuse aux détails.</p>
-      </div>
-      <div class="value-card">
-        <h3>🤝 Partenariat</h3>
-        <p>Nous ne sommes pas juste un prestataire, nous sommes votre partenaire de croissance. Votre succès est notre succès.</p>
-      </div>
-      <div class="value-card">
-        <h3>💡 Innovation</h3>
-        <p>Nous restons à la pointe des technologies et des meilleures pratiques pour vous offrir les solutions les plus performantes.</p>
-      </div>
-      <div class="value-card">
-        <h3>🌱 Transparence</h3>
-        <p>Communication claire, délais réalistes, pas de surprise. Nous croyons en une relation basée sur la confiance.</p>
-      </div>
-      <div class="value-card">
-        <h3>📈 Impact</h3>
-        <p>Notre objectif n'est pas juste de livrer un projet, mais de générer un impact mesurable sur votre activité.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Notre Expertise Technique -->
-  <section class="container" style="margin-top: 4rem;">
-    <h2>Notre Expertise Technique</h2>
-    <p class="intro">Une maîtrise technique solide au service de vos objectifs business.</p>
-
-    <h3>Data Analytics & BI</h3>
-    <ul>
-      <li><strong>Outils :</strong> Power BI, Tableau, Excel Avancé, Google Data Studio</li>
-      <li><strong>Langages :</strong> Python, R, SQL</li>
-      <li><strong>Domaines :</strong> Analyse exploratoire, modélisation, visualisation, reporting</li>
-    </ul>
-
-    <h3>Développement Web</h3>
-    <ul>
-      <li><strong>Frontend :</strong> HTML5, CSS3, JavaScript, React, Vue.js, Tailwind CSS</li>
-      <li><strong>Backend :</strong> Node.js, Python, PHP</li>
-      <li><strong>CMS :</strong> WordPress, Webflow</li>
-      <li><strong>Bases de données :</strong> MySQL, PostgreSQL, MongoDB</li>
-    </ul>
-
-    <h3>Outils & Méthodes</h3>
-    <ul>
-      <li><strong>Gestion de projet :</strong> Agile, Scrum</li>
-      <li><strong>Versioning :</strong> Git, GitHub</li>
-      <li><strong>Déploiement :</strong> Netlify, Vercel, AWS</li>
-      <li><strong>Analytics :</strong> Google Analytics, Mixpanel, Hotjar</li>
-    </ul>
-  </section>
-
-  <!-- Pourquoi Nous ? -->
-  <section class="why-us-section">
-    <div class="container">
-      <h2>Pourquoi Travailler Avec Nous ?</h2>
-      <div class="values-grid">
-        <div class="value-card">
-          <h3>Double Compétence Unique</h3>
-          <p>Peu d'acteurs maîtrisent à la fois l'analyse de données et le développement web au niveau que nous proposons.</p>
-        </div>
-        <div class="value-card">
-          <h3>Approche Humaine</h3>
-          <p>Derrière chaque projet, il y a des humains avec des objectifs. Nous prenons le temps de comprendre votre contexte.</p>
-        </div>
-        <div class="value-card">
-          <h3>Engagement Qualité</h3>
-          <p>Nous ne livrons que ce dont nous sommes fiers. Code propre, documentation complète, tests rigoureux.</p>
-        </div>
-        <div class="value-card">
-          <h3>Accompagnement Continu</h3>
-          <p>Notre relation ne s'arrête pas à la livraison. Nous vous accompagnons dans l'utilisation de vos outils.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Final -->
-  <section class="container" style="text-align: center; margin-bottom: 4rem;">
-    <h2>Rencontrons-Nous</h2>
-    <p>Vous voulez en savoir plus sur notre façon de travailler ? Discutons de votre projet autour d'un café (virtuel ou réel).</p>
-    <a href="contact.html" class="btn primary">Prendre rendez-vous</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3>Mystic Digital Solutions</h3>
-          <p>Data Analytics & Web Development</p>
-          <p>Nous transformons vos données en décisions et vos idées en solutions digitales performantes.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Entreprise</h4>
-          <ul>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html#data-analytics">Data Analytics & BI</a></li>
-            <li><a href="services.html#web-dev">Développement Web</a></li>
-            <li><a href="services.html#solutions">Solutions Complètes</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><span style="color:#007A87;">📧</span> <a href="mailto:contact@mysticdigitalsolutions.com">contact@mysticdigitalsolutions.com</a></li>
-            <li><span style="color:#007A87;">📱</span> <a href="tel:+2290147258953">+229 01 47 25 89 53</a></li>
-            <li><span style="color:#007A87;">📍</span> Cotonou, Bénin</li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Suivez-nous</h4>
-          <div class="social-links">
-            <a href="#" style="color:#007A87; margin-right: 0.5rem;">LinkedIn</a><br>
-            <a href="#" style="color:#007A87; margin-right: 0.5rem;">Facebook</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-left">
-          <p>&copy; 2025 Mystic Digital Solutions. Tous droits réservés.</p>
-        </div>
-        <div class="footer-right">
-          <a href="#">Mentions légales</a> | 
-          <a href="#">Politique de confidentialité</a> | 
-          <a href="#">Conditions d'utilisation</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

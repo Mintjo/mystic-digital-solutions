@@ -1,353 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nos Services — Mystic Digital Solutions</title>
-  <meta name="description" content="Des solutions digitales complètes en Data Analytics, Développement Web et Solutions Sur Mesure pour faire grandir votre entreprise.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .service-header {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-
-    .service-section {
-      padding: 5rem 0;
-      border-bottom: 1px solid #E0E0E0;
-    }
-
-    .service-section:last-child {
-      border-bottom: none;
-    }
-
-    .sub-service {
-      background-color: #FAFAFA;
-      padding: 2rem;
-      border-radius: 8px;
-      margin-top: 2rem;
-    }
-
-    .sub-service h3 {
-      color: #007A87;
-      margin-top: 1.5rem;
-    }
-
-    .checklist {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    .checklist li::before {
-      content: "✓ ";
-      color: #007A87;
-      font-weight: bold;
-    }
-
-    .cta-section {
-      text-align: center;
-      background-color: #F8F9FA;
-      padding: 5rem 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - Mystic Digital Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <!-- Header Navigation -->
-  <header class="main-header">
-    <div class="container">
-      <div class="header-content">
-        <a href="index.html" class="logo">Mystic Digital Solutions</a>
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-white">Mystic Digital</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="text-gray-300 hover:text-white">Accueil</a>
+                    <a href="about.html" class="text-gray-300 hover:text-white">À propos</a>
+                    <a href="services.html" class="text-gray-300 hover:text-white">Services</a>
+                    <a href="portfolio.html" class="text-gray-300 hover:text-white">Portfolio</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-white">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+                <a href="index.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Accueil</a>
+                <a href="about.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">À propos</a>
+                <a href="services.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Services</a>
+                <a href="portfolio.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Portfolio</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700">Contact</a>
+            </div>
         </nav>
-        <a href="contact.html" class="btn primary small">Nous contacter</a>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- En-tête de la page -->
-  <section class="service-header">
-    <div class="container">
-      <h1>Nos Services</h1>
-      <p class="subtitle">Des solutions digitales complètes pour faire grandir votre entreprise</p>
-    </div>
-  </section>
-
-  <!-- SERVICE 1 : Data Analytics -->
-  <section id="data-analytics" class="service-section">
-    <div class="container">
-      <h2>📊 Data Analytics & Business Intelligence</h2>
-      <p class="intro">
-        Vos données sont une mine d'or inexploitée. Nous vous aidons à en extraire la valeur pour éclairer vos décisions stratégiques et opérationnelles.
-      </p>
-
-      <!-- Sous-service 1.1 -->
-      <div class="sub-service">
-        <h3>Analyse & Exploration de Données</h3>
-        <p>
-          Nous plongeons dans vos données pour identifier les tendances, patterns et opportunités cachées. Notre approche analytique rigoureuse transforme des chiffres bruts en informations exploitables.
-        </p>
-        <h4>Ce que nous faisons :</h4>
-        <ul class="checklist">
-          <li>Analyse exploratoire de vos bases de données</li>
-          <li>Identification de tendances et patterns</li>
-          <li>Segmentation et profilage</li>
-          <li>Analyse de corrélations et causalités</li>
-          <li>Recommandations actionnables</li>
-        </ul>
-      </div>
-
-      <!-- Sous-service 1.2 -->
-      <div class="sub-service">
-        <h3>Dashboards & Visualisation</h3>
-        <p>
-          Visualisez vos données en temps réel avec des tableaux de bord intuitifs et interactifs. Suivez vos KPIs les plus importants d'un seul coup d'œil.
-        </p>
-        <h4>Ce que nous créons :</h4>
-        <ul class="checklist">
-          <li>Dashboards personnalisés (Power BI, Tableau, Excel)</li>
-          <li>Visualisations interactives et dynamiques</li>
-          <li>Rapports automatisés</li>
-          <li>Suivi de KPIs en temps réel</li>
-          <li>Alertes et notifications intelligentes</li>
-        </ul>
-      </div>
-
-      <!-- Sous-service 1.3 -->
-      <div class="sub-service">
-        <h3>Data Cleaning & Transformation</h3>
-        <p>
-          Des données de qualité sont essentielles pour des analyses fiables. Nous nettoyons, structurons et préparons vos données pour l'analyse.
-        </p>
-        <h4>Ce que nous offrons :</h4>
-        <ul class="checklist">
-          <li>Nettoyage et standardisation des données</li>
-          <li>Détection et correction d'anomalies</li>
-          <li>Intégration de sources multiples</li>
-          <li>Modélisation de données</li>
-          <li>Automatisation des processus ETL</li>
-        </ul>
-      </div>
-
-      <!-- Sous-service 1.4 -->
-      <div class="sub-service">
-        <h3>Business Intelligence & Reporting</h3>
-        <p>
-          Transformez vos données en insights stratégiques avec des rapports complets qui guident vos décisions d'affaires.
-        </p>
-        <h4>Ce que nous livrons :</h4>
-        <ul class="checklist">
-          <li>Rapports périodiques automatisés</li>
-          <li>Analyses prédictives et prévisionnelles</li>
-          <li>Benchmarking et études comparatives</li>
-          <li>Documentation et interprétation</li>
-          <li>Conseil stratégique data-driven</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICE 2 : Développement Web -->
-  <section id="web-dev" class="service-section">
-    <div class="container">
-      <h2>💻 Développement Web & Applications</h2>
-      <p class="intro">
-        Votre présence digitale est votre vitrine au monde. Nous créons des sites web et applications qui allient esthétique, performance et fonctionnalité.
-      </p>
-
-      <!-- Sous-service 2.1 -->
-      <div class="sub-service">
-        <h3>Sites Web Professionnels</h3>
-        <p>
-          Un site web qui reflète votre professionnalisme et convertit vos visiteurs en clients. Design moderne, responsive et optimisé pour les moteurs de recherche.
-        </p>
-        <h4>Ce que nous créons :</h4>
-        <ul class="checklist">
-          <li>Sites vitrines modernes et élégants</li>
-          <li>Design responsive (mobile, tablette, desktop)</li>
-          <li>Optimisation SEO intégrée</li>
-          <li>Performance et rapidité optimales</li>
-          <li>Interface utilisateur intuitive</li>
-        </ul>
-      </div>
-
-      <!-- Sous-service 2.2 -->
-      <div class="sub-service">
-        <h3>Applications Web Sur Mesure</h3>
-        <p>
-          Des applications web performantes et évolutives qui répondent précisément à vos besoins métier. De la simple webapp au système complexe.
-        </p>
-        <h4>Ce que nous développons :</h4>
-        <ul class="checklist">
-          <li>Applications web personnalisées</li>
-          <li>Systèmes de gestion interne</li>
-          <li>Outils métier spécifiques</li>
-          <li>Portails clients/collaborateurs</li>
-          <li>Solutions SaaS</li>
-        </ul>
-      </div>
-
-      <!-- Sous-service 2.3 -->
-      <div class="sub-service">
-        <h3>Solutions E-commerce</h3>
-        <p>
-          Vendez en ligne avec une boutique performante, sécurisée et facile à gérer. Nous créons des expériences d'achat qui convertissent.
-        </p>
-        <h4>Ce que nous offrons :</h4>
-        <ul class="checklist">
-          <li>Boutiques en ligne complètes</li>
-          <li>Intégration de paiements sécurisés</li>
-          <li>Gestion de catalogue produits</li>
-          <li>Systèmes de commande et livraison</li>
-          <li>Analytics e-commerce intégré</li>
-        </ul>
-      </div>
-
-      <!-- Sous-service 2.4 -->
-      <div class="sub-service">
-        <h3>Maintenance & Évolution</h3>
-        <p>
-          Un site web nécessite un entretien régulier. Nous assurons la maintenance, les mises à jour et l'évolution continue de vos plateformes.
-        </p>
-        <h4>Ce que nous gérons :</h4>
-        <ul class="checklist">
-          <li>Maintenance technique régulière</li>
-          <li>Mises à jour de sécurité</li>
-          <li>Optimisation des performances</li>
-          <li>Corrections de bugs</li>
-          <li>Ajout de nouvelles fonctionnalités</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICE 3 : Solutions Complètes -->
-  <section id="solutions" class="service-section">
-    <div class="container">
-      <h2>🚀 Solutions Digitales Complètes</h2>
-      <p class="intro">
-        L'union de la data et du web pour des solutions qui transforment vraiment votre entreprise. Nous combinons nos expertises pour créer des écosystèmes digitaux complets.
-      </p>
-
-      <!-- Sous-service 3.1 -->
-      <div class="sub-service">
-        <h3>Sites Web Intelligents</h3>
-        <p>
-          Un site web qui mesure, analyse et optimise sa propre performance. Intégration d'analytics avancés pour comprendre et améliorer continuellement l'expérience utilisateur.
-        </p>
-        <h4>Ce que vous obtenez :</h4>
-        <ul class="checklist">
-          <li>Site web moderne + dashboard analytics</li>
-          <li>Suivi comportemental des visiteurs</li>
-          <li>Analyses de conversion</li>
-          <li>Tests A/B et optimisation</li>
-          <li>Rapports de performance automatisés</li>
-        </ul>
-      </div>
-
-      <!-- Sous-service 3.2 -->
-      <div class="sub-service">
-        <h3>Accompagnement Transformation Digitale</h3>
-        <p>
-          Nous vous accompagnons dans votre transformation digitale globale, de l'audit initial à la mise en œuvre de solutions complètes.
-        </p>
-        <h4>Notre accompagnement :</h4>
-        <ul class="checklist">
-          <li>Audit digital complet</li>
-          <li>Stratégie de transformation</li>
-          <li>Solutions data + web intégrées</li>
-          <li>Formation de vos équipes</li>
-          <li>Support continu</li>
-        </ul>
-      </div>
-
-      <!-- Sous-service 3.3 -->
-      <div class="sub-service">
-        <h3>Consulting Digital & Data</h3>
-        <p>
-          Bénéficiez de notre expertise pour définir votre stratégie digitale et data. Nous vous conseillons sur les meilleures approches et technologies.
-        </p>
-        <h4>Nos interventions :</h4>
-        <ul class="checklist">
-          <li>Audit et diagnostic</li>
-          <li>Recommandations stratégiques</li>
-          <li>Choix technologiques</li>
-          <li>Roadmap de développement</li>
-          <li>Accompagnement décisionnel</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Final -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Besoin d'un Service Spécifique ?</h2>
-      <p>Chaque entreprise a des besoins uniques. Contactez-nous pour discuter de votre projet et découvrir comment nous pouvons vous aider.</p>
-      <a href="contact.html" class="btn primary">Demander une consultation gratuite</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3>Mystic Digital Solutions</h3>
-          <p>Data Analytics & Web Development</p>
-          <p>Nous transformons vos données en décisions et vos idées en solutions digitales performantes.</p>
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-20">
+        <h1 class="text-4xl font-bold text-center text-white">Nos Services</h1>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Data Analyse -->
+            <div class="service-card bg-gray-800 p-8 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-white">Analyse de Données Approfondie</h3>
+                <p class="mt-4 text-gray-400">Nous explorons vos données pour en extraire des insights précieux, vous aidant à comprendre les tendances du marché et à prendre des décisions éclairées.</p>
+            </div>
+            <!-- Développement Web -->
+            <div class="service-card bg-gray-800 p-8 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-white">Développement Web et Mobile</h3>
+                <p class="mt-4 text-gray-400">Création de sites web et d'applications mobiles sur mesure, alliant esthétique moderne et performances optimales pour une expérience utilisateur inoubliable.</p>
+            </div>
+            <!-- Innovation Digitale -->
+            <div class="service-card bg-gray-800 p-8 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-white">Stratégie d'Innovation Digitale</h3>
+                <p class="mt-4 text-gray-400">Nous vous guidons dans votre transformation numérique en élaborant des stratégies innovantes pour vous démarquer dans un monde de plus en plus connecté.</p>
+            </div>
+            <!-- Visualisation de Données -->
+            <div class="service-card bg-gray-800 p-8 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-white">Visualisation de Données</h3>
+                <p class="mt-4 text-gray-400">Transformez vos données brutes en visualisations interactives et percutantes pour une communication claire et efficace de vos informations clés.</p>
+            </div>
+            <!-- Conception UI/UX -->
+            <div class="service-card bg-gray-800 p-8 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-white">Conception UI/UX</h3>
+                <p class="mt-4 text-gray-400">Conception d'interfaces utilisateur intuitives et esthétiques, centrées sur l'expérience utilisateur, pour garantir l'engagement et la satisfaction de vos clients.</p>
+            </div>
+            <!-- Conseil Technologique -->
+            <div class="service-card bg-gray-800 p-8 rounded-lg text-center">
+                <h3 class="text-xl font-bold text-white">Conseil Technologique</h3>
+                <p class="mt-4 text-gray-400">Bénéficiez de notre expertise pour choisir les meilleures technologies et solutions pour soutenir votre croissance et atteindre vos objectifs.</p>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Entreprise</h4>
-          <ul>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Mystic Digital Solutions. Tous droits réservés.</p>
         </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="services.html#data-analytics">Data Analytics & BI</a></li>
-            <li><a href="services.html#web-dev">Développement Web</a></li>
-            <li><a href="services.html#solutions">Solutions Complètes</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><span style="color:#007A87;">📧</span> <a href="mailto:contact@mysticdigitalsolutions.com">contact@mysticdigitalsolutions.com</a></li>
-            <li><span style="color:#007A87;">📱</span> <a href="tel:+2290147258953">+229 01 47 25 89 53</a></li>
-            <li><span style="color:#007A87;">📍</span> Cotonou, Bénin</li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Suivez-nous</h4>
-          <div class="social-links">
-            <a href="#" style="color:#007A87; margin-right: 0.5rem;">LinkedIn</a><br>
-            <a href="#" style="color:#007A87; margin-right: 0.5rem;">Facebook</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-left">
-          <p>&copy; 2025 Mystic Digital Solutions. Tous droits réservés.</p>
-        </div>
-        <div class="footer-right">
-          <a href="#">Mentions légales</a> | 
-          <a href="#">Politique de confidentialité</a> | 
-          <a href="#">Conditions d'utilisation</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
